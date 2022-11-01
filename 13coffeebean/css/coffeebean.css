@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import url("animate.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+img{vertical-align: top;}
+html{
+    font-size: 14px; font-family: 'Noto Sans KR', sans-serif;
+}
+a{text-decoration: none;}
+a:link,a:visited,a:hover,a:active{color: #333;}
+#img_bnr h2,
+#con_wrap h2{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+
+/*레이아웃 공통사용*/
+.wrap{
+    width:1280px;
+    margin:0 auto;
+    position: relative;
+}
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+header,footer{
+    width:100%;
+    background-color:#ddd;
+}
+.sub_title{
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: darkorange;
+}
+
+/*헤더*/
+#util>ul{
+    float: right;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+#util>ul>li{
+    height: 50px; line-height: 50px;
+    margin-left: 30px;
+    float: left;
+}
+#util>ul>li a{display: block; height: 50px;}
+#util::after,
+.left>ul::after,
+.right>ul::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}/* <<-플로트 초기화*/
+
+#gnb{
+    background: #fff;
+}
+#top_menu{
+    margin: 0 auto;
+    width: 85%; height: 100px;
+    line-height: 100px;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+#gnb ul::after{
+    content:'';
+    display: inline-block;
+    background-image: url('../img/logo.png');
+    height: 70px; width: 70px;
+    position: absolute;
+    left: 0; top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#gnb ul li:hover>a{color: darkorange;}
+
+/*이미지배너영역*/
+#img_bnr{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+#img_bnr>div:first-of-type{
+    width: 100%; height: 540px;
+    background: url('../img/banner1.jpg') no-repeat center top/100%;
+}
+#img_bnr>div:last-child{
+    width: inherit; height: 400px;
+    background: url('../img/banner2.jpg') no-repeat center top/100%;
+}
+
+/*MD PICK*/
+#mdpick{text-align: center;}
+#mdpick h3{margin: 20px 0; font-size: 1.3rem; font-weight: 500;}
+#mdpick h4{
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 600; color: darkorange; margin-bottom: 50px;
+}
+
+/*What's new*/
+#whatsnew{margin: auto 20px; text-align: center; position: relative;}
+#whatsnew li{width: 380px; height: 470px; overflow: hidden;}
+#whatsnew img:hover{
+    transform: scale(1.1);
+    transition:all .4s;
+}
+#whatsnew li:nth-child(even){
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 25px 0;
+    color: darkorange;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: absolute;
+    top: 480px;
+}
+#whatsnew li:nth-child(4){left: 50%; transform: translateX(-50%);}
+#whatsnew li:nth-child(6){right: 0;}
+/*하단광고 */
+#con_wrap{
+    margin-top:100px;
+    background: purple;
+    padding: 60px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+#con_wrap p{color: #fff; font-size: 1.5rem; margin: 40px 0;}
+#con_wrap li{width: 16.66666666666667%;}
+#con_wrap img{width: 100%;}
+#con_wrap img:hover{
+    filter: brightness(0.5) grayscale(1);
+    transition:all .3s;
+}
+#con_wrap p>a{
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 10px 60px;
+    background: darkorange;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/*푸터*/
+footer{padding-top: 80px; line-height: 2;}
+#footer_wrap{
+    position: relative;
+    height:550px;
+}
+#footer_menu ul>li:first-child{
+    font-family: 'Nanum Myeongjo', serif;
+    color: darkorange;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+#footer_menu{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 30px;
+}
+.left{ font-size: 1.1rem; line-height: 2rem; font-weight: 300;}
+.left>ul{margin-bottom: 20px;}
+.left>ul>li{
+    float: left;
+    margin-right: 12px;
+    line-height: 16px;
+}
+.left>ul>li span{color: darkorange;}
+.left>ul>li:nth-child(even){font-size: 0.8rem;}
+.right>ul{position: absolute; top: -140px; right: 0;}
+.right>ul>li{
+    float: left;
+    margin-left: 20px;
+}
+
+
+
+
+

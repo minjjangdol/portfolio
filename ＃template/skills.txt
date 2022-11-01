@@ -1,0 +1,10 @@
+html 85%
+css 85%
+포토샵 80%
+일러스트 50%
+javascript 30%
+maya 50%
+blender 30%
+substance painter 50%
+
+

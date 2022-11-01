@@ -1,0 +1,325 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import "layout.css";
+a,a:link,a:visited,a:hover,a:active{
+    text-decoration:none;
+    color:#333;
+}
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+}
+@font-face {
+    font-family: '국립박물관문화재단클래식M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식M.woff') format('woff');
+}
+html{
+	font-size:14px;
+}
+/*
+#2F2722
+#215792
+#EFECDE
+#9C856C
+*/
+/*탑라인 꾸미기*/
+#contents>div{font-size: 1.4rem;line-height: 1.6;}
+#box2>div:first-child,#box7>div:first-child,#contents>div#box5
+{border-top: 10px solid #215792;box-sizing: border-box;}
+#box4>div:first-child,#box6>div:nth-child(2),#box3,#box2>div:last-child
+{border-top: 10px solid #9C856C;box-sizing: border-box;}
+#box6>div:first-child,#box7>div:last-child{border-top: 10px solid #2F2722;box-sizing: border-box;}
+.top_bg{background: #fff; width: 100%;}
+.top_bg>.flex{padding: 0 10px;}
+.under_line{
+    width: 100%;
+    border-bottom: 1px solid #888;
+    margin-bottom: 15px;
+}
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.flex li:last-child{
+    font-size: 0.9rem; line-height: 30px;
+}
+.flex li:last-child a{color: #888;}
+#contents>div{
+	width:295px;
+	margin:10px;
+	overflow:hidden;
+}
+/*헤더영역*/
+header{
+	background-image: url('../images/header_bnr.jpg');
+}
+header>h2,#contents>h2{
+	width:0; height:0;
+	visibility:hidden;
+	overflow:hidden;
+	text-indent:-9999px;
+	display:none;
+}
+#utilwrap{
+	background:#215792;
+}
+#utilwrap ul li a{color: #fff;}
+select{
+    padding-left: 5px;
+    width:80px;
+    border: 1px solid #fff;
+    background: url('../images/util_arrow.png') no-repeat 95% 50%;
+    border-radius: 5px;
+    color: #fff; 
+}
+#logo{
+	width:222px; height: 58px;
+	background: url('../images/logo.png');
+	margin: 80px auto;
+}
+#logo>a{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-align:-9999px;
+}
+#gnb{
+	justify-content:space-around;
+	height:70px;
+}
+#gnb ul{
+	border-top: 1px solid #333;
+	justify-content:space-around;
+	padding: 0 60px;
+}
+/*메인배너*/
+#contents>div:nth-of-type(1){
+	width:610px;
+	height:500px;
+	overflow:hidden;
+	background-image: url('../images/mian_bnr.png');
+}
+#contents>div:nth-of-type(1) a{
+    display: block;
+    width:610px;
+	height:500px;
+    text-indent: -9999px;
+}
+/*문학관소개*/
+#box2>div:first-child{background: url('../images/box2-1.png');}
+#box2>div>div:last-child{margin:auto 15px;}
+#box2>div:first-child h3{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+#box2>div:first-child p{
+    font-size: 0.9rem;
+    width: 50%;
+}
+/*기증품*/
+#donation{
+    justify-content: space-around;
+}
+#donation li{
+    text-align: center;
+    width :115px; height:145px;
+    border: 1px solid #888;
+}
+#donation>li a{color: #333;}
+#donation>li>a>figure,
+#donation>li>a>figure img{height:145px;}
+#donation>li>a>figcaption{
+    font-size: 0.9rem;
+    height: 35px;
+    line-height: 35px;
+    font-weight: bold;
+}
+/*작가검색*/
+#box3>.under_line{margin-bottom: 0;}
+#writers{
+    width: 295px;
+    background-image: url('../images/box3.png');
+}
+#writers li{
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 50px;
+    width: 50%;
+    height: 153px;
+    border: 1px solid #888;
+    border-top: 0; border-left: 0;
+    box-sizing: border-box;
+}
+#writers li a{
+    display: block;
+    width: 140px; height: 153px;
+    color: #2F2722;
+}
+#writers li:nth-child(2),
+#writers li:nth-child(6){
+    padding-top: 40px;
+    line-height: 40px;
+}
+#writers li:nth-child(3),
+#writers li:nth-child(4){text-align: right;}
+/*오늘의작가*/
+#box4>.inner_mbox{
+    background-image: url('../images/box4-1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 295px 457px;
+}
+/*제휴*/
+#box4>.inner_sbox{
+    background-image: url('../images/box4-2.jpg');
+    text-indent: -9999px;
+}
+/*소문예지 문학관*/
+#magazine{
+    margin: auto 20px;
+    height: 680px;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+#magazine li{
+    width: 116px; height: 144px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid #888;
+    box-sizing: border-box;
+}
+#magazine li a{color: #333;}
+#magazine figure>img{width: 114px; height: 142px;}
+#magazine figcaption{
+    transform: translate(150px, -85px);
+}
+/*소장자료*/
+#collection figure{
+    width: 140px; height: 170px;
+    margin: auto 15px;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    text-align: center;
+}
+#collection figure img{height: 168px;}
+#collection figcaption{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    transform: translate(75px, -100px);
+}
+/*오시는길*/
+#box6_2{background: url('../images/box6-2.png');}
+#box6_2>.bnt_map{
+    justify-content: space-around;
+    transform: translateY(150px);font-size: 1rem;
+    line-height: 20px;
+    padding: 2px 45px;
+    box-sizing: border-box;
+}
+.bnt_map span a{display: block;width: 30%;}
+.bnt_map a{
+    color: #fff;
+    padding: 2px 20px;
+    background: #666;
+    border-radius: 20px;
+    font-weight: bold;
+}
+/*이용안내*/
+#time{padding: 0;}
+#time .blue_line{
+    width: 100%; height: 45px;
+    line-height: 45px;
+    padding: 0 5px;
+    background: #215792;
+    color: #fff;
+    font-weight: bold;
+}
+.text_wrap{
+    font-size: 1.1rem;
+    width: 56%;
+    margin: 20px auto;
+    color: #333;
+}
+.text_wrap>li{margin-top: 10px;}
+.text_wrap>li>span{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.text_wrap>li:nth-child(2){line-height: 0.9;}
+.text_wrap>li>span.small_txt{font-size: 0.8rem; color: #666;}
+#time>ul>li:last-child{text-align: center;}
+#time>ul>li:last-child span{font-size:1.2rem; font-weight: 400;}
+/*문학이야기*/
+#box7>.inner_mbox{
+    background: url('../images/box7-1.png') no-repeat;
+    background-position: bottom;
+    background-size: 100% 458px;
+}
+#poem{
+    margin: 60px 40px;
+    color: #333;
+}
+#poem>li:first-child{
+    font-family: '국립박물관문화재단클래식B';
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#poem>li:nth-child(2){
+    font-family: '국립박물관문화재단클래식M';
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+#poem>li:last-child{
+    text-align: center;
+    font-size: 1.2rem;
+    position: relative;
+}
+#poem>li:last-child::after{
+    content:'';
+    display: block;
+    background-image: url('../images/arrow.png');
+    width: 13px; height: 7px;
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    top:-15px;
+}
+/*공지사항*/
+#box8{background: #e9e6d7;}
+#notice{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 90%;
+}
+#notice>li{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    line-height: 2.1;
+}
+/*푸터*/
+footer{
+    padding-top: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+footer img{
+    width: 222px;
+    margin-bottom: 30px;
+}
+
+
+

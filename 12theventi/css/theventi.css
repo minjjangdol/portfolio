@@ -1,0 +1,367 @@
+@charset "utf-8";
+@import "clear.css";
+
+
+/*폰트 font-family: 'geo'; */
+@font-face {
+    font-family: 'geo';
+    src: url('../font/Geometos.ttf') format('truetype');
+}
+/*공통영역*/
+html{font-size:14px; position: relative;}
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#333;}
+a:active{color:#333;}
+.wrap{width: 1200px; margin: 0 auto;}
+.flex{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+}
+section>h2{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+#menu{display: none;}
+
+/*GNB*/
+nav{
+    position:relative;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 4px;
+}
+
+#logo h1{width: 20%;}
+#logo{width: 130px;}
+#logo img{height: 30px; position:absolute; top:50%; transform: translateY(-50%);}
+
+#gnb{width:50%; font-family: 'geo'; font-size: 16px;}
+#gnb li a,#second_menu li a{
+    padding: 0 5px;
+    position: relative;
+    width: 100%;
+}
+#gnb li a::after,
+#second_menu li a::after{
+    content: '';
+    display: block;
+    width:0;
+    background: #7B00A0;
+    position: absolute;
+    bottom:-25px;
+    left: 50%; transform: translateX(-50%);
+    transition: all .3s;
+}
+#gnb li a:hover,
+#second_menu li a:hover{color: #7B00A0;}
+
+#gnb li a:hover::after,
+#second_menu li a:hover::after{width:105%; height:3px;}
+
+#gnb_btn{width: 130px; position: relative;}
+#gnb_btn>li>a{
+    display: block;
+    color: #fff;
+    background: #7B00A0;
+    padding: 5px 15px;
+    width:100px; height: 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#gnb_btn>li>a::after{
+    content: '';
+    display: block;
+    width:26px; height: 20px;
+    background: url('../images/logo-icon.png')no-repeat center;
+    position: absolute;
+    top:50%; right: 10px;
+    transform: translateY(-50%);
+}
+
+/*비주얼배너영역*/
+#visual_bnr{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+#visual_bnr>div{
+    width: 100%; height: 480px;
+    background: url('../images/header_bg.png') no-repeat center/cover;
+    z-index: 0;
+}
+#visual_bnr p{
+    color: #fff;
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%);
+}
+#visual_bnr p:first-child{font-family: 'geo'; font-size: 3rem;}
+#visual_bnr p:last-child{margin-top: 60px; font-size: 16px;}
+
+/*second_menu*/
+#second_menu {
+    height: 60px;
+    line-height: 60px;
+    font-weight: 600;padding-bottom: 4px;
+    border-bottom: 2px solid #ddd; margin-bottom: 80px;
+}
+#second_menu ul{width: 350px;}
+
+/*drink_menu*/
+#drink_menu ul{
+    margin-bottom: 50px;}
+#drink_menu ul>li{
+    width: 25%;
+    text-align: center;
+    font-weight: 600;
+    padding: 20px 0;
+    background: rgb(228, 218, 215);
+}
+#drink_menu ul>li a{width: 100%;}
+#drink_menu ul>li:hover,
+#drink_menu ul>li:hover a{background: #30000e; color: #fff; cursor: pointer;}
+
+/*음료리스트*/
+#beverages{text-align: center; margin-bottom: 150px;}
+#beverages figure{
+    width: 24%; height: 350px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 15px;
+}
+#beverages figure>img{margin-top: 30px;}
+
+#beverages figure div{
+    width:35px;
+    margin: 0 auto;
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.blue_dot{color: #1783e8; font-size: 5rem; line-height: 10px;}
+.red_dot{color: #ff1846; font-size: 5rem;line-height: 10px;}
+#beverages figure>figcaption{
+    margin-top: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #888;
+}
+
+#beverages figure::after{
+    content: 'BEST';
+    color: #fff;
+    background: #f39932;
+    width: 50px; height: 50px;
+    box-sizing: border-box;
+    padding-top: 17px;
+    font-weight: 600;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top:10px; right: 10px;
+}
+
+/*푸터*/
+#footer_contain{background: #2f093b; color: #fff; position: relative;}
+#footer_contain a{color: #fff;}
+
+#footer_line{
+    width:100%; height:1px; background: #fff; position: absolute; top:140px;}
+
+#footer_top{padding:50px 0; width: 75%;}
+#footer_top img{height: 30px;}
+#footer_top ul{
+    width:600px;
+    white-space:nowrap;
+    overflow:auto;
+}
+#footer_top li{
+    display: inline-block;
+    margin:  0 10px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+
+
+#footer_bottom{padding: 50px 0;}
+.digit{line-height: 1.5;margin-top: 20px;}
+.digit span{margin-left: 10px; font-family: 'geo'; color: #e86012; font-size: 1.8rem;}
+
+.adress{line-height: 2.2; font-weight: 200;}
+.adress span{margin-right: 30px; font-weight: 600;}
+.adress li:last-child{margin-top: 15px;}
+
+#footer_btn{
+    display: block;
+    color: #fff;
+    margin-top: 30px;
+    background: #e86012;
+    padding: 5px 15px;
+    width:80px; height: 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    font-weight: 800;
+    position: relative;
+}
+#footer_btn::after{
+    content: '';
+    display: block;
+    width:26px; height: 20px;
+    background: url('../images/logo-icon.png')no-repeat center;
+    position: absolute;
+    top:50%; right: 15px;
+    transform: translateY(-50%);
+}
+
+/*고정메뉴*/
+#right_btn{
+    position: fixed;
+    z-index: 999;
+    width: 99%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#right_btn p{
+    background: #2f093b;
+    width:100px; height: 100px;
+    padding-top: 22px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 7px 0;
+    text-align: center;
+    position: absolute;
+}
+#right_btn p:nth-of-type(1){top:190px;}
+#right_btn p:nth-of-type(2){top:295px;}
+#right_btn p:nth-of-type(3){top:400px;}
+#right_btn a{
+    display: block;
+    width: 100px;
+    color: #fff;
+}
+#right_btn span,#right_btn img{
+    display: block;
+    margin: 5px auto 0;
+}
+#right_btn span{font-size: 1.5rem; font-weight: 600;}
+
+
+footer{position: relative;}
+#sns_icon{
+    width: 200px;
+    position: absolute;
+    top: 50px; right: 15px;}
+#sns_icon img{display:block; margin-left: 5px;}
+
+
+/*타블렛 분기점*/
+@media all and (max-width:995px){
+    .wrap{width: 100%; padding: 0 10px; box-sizing: border-box;}
+    #right_btn{display: none;}
+
+    /*GNB 햄버거*/
+    #gnb li a::after{display: none;}
+    #gnb_btn{display: none;}
+
+    #gnb{
+        display: none;
+        position: absolute;
+        top: 0; right: 0;
+        width: 200px;
+        margin-top: 60px;
+        background: rgba( 255,255,255,0.8);
+        z-index: 999;
+    }
+    #gnb>li>a, .sub>li>a{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 0 10px 20px;
+        color: #000;
+        transition: all .3s;
+    }
+    
+    #menu{
+        display: block;
+        width:30px;
+        margin-top: 15px;
+    }
+    #menu>span{
+        width:100%;
+        height:4px;
+        background: #000;
+        display: block;
+    }
+    #menu>span:nth-child(2){margin:7px 0;}
+    .aniMenu{
+        position: relative;
+        width: 100%;
+        z-index: 99;
+    }
+    .aniMenu::before{
+        content:'';
+        display: block;
+        background: #000;
+        width: 30px; height: 4px;
+        transform: rotate(-45deg);
+        position: absolute;
+        top:12px;
+    }
+    .aniMenu::after{
+        content:'';
+        display: block;
+        background: #000;
+        width: 30px; height: 4px;
+        transform: rotate(45deg);
+        position: absolute;
+        top:12px;
+    }
+
+    #menu.aniMenu>span{
+        background: transparent;
+    }
+
+    /*비주얼배너*/
+    #visual_bnr p:first-child{font-size: 2rem;}
+    #visual_bnr p:last-child{font-size: 1rem; width: 100%;}
+
+    /*second_menu*/
+    #second_menu{
+        height: 40px; line-height: 40px;
+        margin-bottom: 40px;
+    }
+    #second_menu li a::after{display: none;}
+
+    /*drink_menu*/
+    #drink_menu ul>li{width: 50%;}
+
+    /*음료리스트*/
+    #beverages figure{width: 49.5%;}
+
+    /*푸터*/
+    #footer_line{display: none;}
+    footer div{ width: 55%;}
+    #footer_top{padding:50px 0 0;}
+    #footer_top img{
+        height: 30px; margin-bottom: 20px;
+    }
+    #footer_bottom{padding: 0;}
+    .adress{margin: 20px 0; font-size: 0.9rem;}
+    .adress span{display:block;}
+    #footer_btn{margin:0 0 20px 0;}
+}

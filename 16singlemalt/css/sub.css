@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import "common.css";
+
+#knowledge h3{
+    font-size: 1.8rem;
+    color: #918b8d;
+    margin: 20px 0;
+}
+#knowledge p{line-height: 2.2;}
+
+/*첫번째 소개*/
+#knowledge>div:nth-of-type(1){margin: 50px 0;}
+#knowledge>div:nth-of-type(1) p{
+    padding: 30px;
+    background: #eeeade;
+}
+#knowledge>div:nth-of-type(1) img{margin-top: 30px;}
+
+/*두번째 소개*/
+#knowledge>div:nth-of-type(2){margin-bottom: 80px;}
+#knowledge>div:nth-of-type(2) p{
+    font-size: 0.9rem; line-height: 2.5;
+}
+/*세번째소개*/
+#last_knowledge{
+    flex-direction : row-reverse;
+    justify-content: space-between;
+}
+#last_knowledge>img{width: 28%; height: 28%;}
+#last_knowledge>p{width: 66%; line-height: 3;}
+
+.dot_line{
+    border-bottom: 2px dashed #918b8d;
+    padding-bottom: 50px;
+}
