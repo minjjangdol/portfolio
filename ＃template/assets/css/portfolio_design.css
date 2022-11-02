@@ -11,12 +11,10 @@
 font-family: 'Pacifico', cursive;
 font-family: 'LeferiPoint-SpecialItalicA';
 */
-#first_wrap{overflow: hidden;}
 a{text-decoration: none;}
 /* 시스템 커서 안 보이게 숨기기 */
 body,body a:hover,input,textarea,label{cursor: none;}
-
-
+#top{overflow-x: hidden;}
 #up_btn:hover a{border: 0; color: #fff;}
 /*픽스메뉴*/
 .sub {
@@ -41,10 +39,28 @@ body,body a:hover,input,textarea,label{cursor: none;}
 .sub li a:hover{
     color: #000 !important;
 }
-#top_btn{margin: 0 auto;}
 
+#top_btn{
+    font-size: 1rem;
+    position: fixed; 
+    right: 70px;
+    bottom: 10%;}
+#top_btn>a{
+    display: block;
+    color: #000;
+    font-weight: 600;
+    position: absolute;
+    background: #fcc;
+    padding: 10px;
+    border-radius: 50%;
+}
+#top_btn>a:hover,#intro:hover{
+    background: transparent;
+    color: #fff;
+}
+
+nav{position: sticky; top: 10px;}
 #gnb{
-    position: fixed;
     width: 100%;
     padding: 0;
     display: flex;
@@ -83,6 +99,7 @@ body,body a:hover,input,textarea,label{cursor: none;}
 }
 #gnb>li>a:hover{
     color: #000;
+
 }
 .blue_dot:hover::after{
     width:30px; height:30px;
@@ -91,86 +108,25 @@ body,body a:hover,input,textarea,label{cursor: none;}
 }
 
 /*제목*/
-h1{
+#intro{
+    position: absolute;
+    left: 2%; top: 15px;
+}
+#intro>h1{
     font-family: 'Pacifico', cursive;
-    font-size: 4rem;
-    color: transparent;
-    border: 10px solid #000;
+    font-size: 26px;
+    color: #000;
+    border: 5px solid #000;
     border-top: 0;
     border-radius: 50%;
     background: transparent;
-    width: 450px; height: 150px;
-    margin: 40px auto -12px;
-    line-height: 150px;
+    width: 120px; height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
 }
+section>h2{margin: 200px 0;}
 h2{font-family: 'LeferiPoint-SpecialItalicA';}
-
-/*텍스트 보더라인
-text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-*/
-/* 타이핑 효과 */
-.typing-txt{display: none;}
-.typing {  
-display: inline-block; 
-animation-duration: 0.3s; 
-animation-iteration-count: infinite;
-font-size: 4rem;
-height: 65px;
-font-weight: 600;
-padding-right: 10px;
-}
-
-
-@media screen and (max-width: 1680px) {
-			
-    .typing {
-        font-size: 4rem;
-        height: 51px;
-    }
-
-}
-
-@media screen and (max-width: 1280px) {
-
-    .typing {
-        font-size: 3.8rem;
-        height: 39px;
-    }
-    h1{
-        width: 350px; height: 120px;
-        line-height: 120px;
-    }
-
-}
-
-@media screen and (max-width: 736px) {
-
-    .typing {
-        font-size: 3.5rem;
-        height: 31px;
-    }
-    h1{
-        width: 300px; height: 100px;
-        line-height: 100px;
-    }
-
-}
-
-@media screen and (max-width: 360px) {
-    
-    .typing {
-        font-size: 3rem;
-        height: 20px;
-    }
-
-}
-
-
-/*스타트버튼*/
-#start_btn{
-    padding: 0;
-    border: 0;
-}
 
 /* 커스텀 커서 스타일 정의해주기 */
 .cursor {
@@ -191,25 +147,8 @@ padding-right: 10px;
 .link-grow {
     transform: scale(2.5);
     background-color: #000;
-    z-index: 1000;
+    z-index: 100;
 }
-/* hover된 링크의 글자 색상 정의(하얀색)*/
-.hovered-link{
-    color: #fff;
-}
-/*말풍선*/
-.bubble>div{
-    background: #fff;
-    border: 6px solid #000;
-    border-top: 0;
-    border-radius: 50%;
-    margin:0 auto 10px;
-    width: 20%;
-}
-.bubble>div:nth-of-type(1){width: 95px; height: 45px;}
-.bubble>div:nth-of-type(2){width: 40px; height: 20px;}
-.bubble>div:nth-of-type(3){width: 20px; height: 10px;}
-
 
 
 /*콘텐츠 영역*/
@@ -231,6 +170,7 @@ padding-right: 10px;
 
 /*about*/
 #about img{width: 55px; margin-bottom: 15px;}
+#about{border-top: 0;}
 /*막대그래프*/
 .zt-skill-bar {
     color: #fff;
@@ -302,3 +242,52 @@ padding-right: 10px;
 
 /*thankyou*/
 #thankyou{padding: 50px 0 30px;}
+
+
+
+
+
+@media screen and (max-width: 1680px) {
+
+
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 736px) {
+    /*gnb*/
+    #gnb{padding-top: 20px;}
+    #gnb a,#gnb li{color: #000; font-size: 1.3rem;}
+    #gnb>li{
+        padding: 0;
+        margin: 1.5rem;
+        width: 20%;
+        padding: 0;
+    }
+    
+    #gnb>li>a{
+        width: 60px;
+        line-height: 20px;
+        font-size: 0.9rem;
+        color: #000;
+    }
+
+    .sub {
+        top: 80px;
+        line-height: 2;
+    }
+
+
+    .blue_dot:hover::after{
+        width:20px; height:20px;
+    }
+    #about h2,#design h2{margin-top: 50px}
+
+    /*제목*/
+    #intro{
+        position: relative;
+        left: 0; top: 20px;
+    }
+}

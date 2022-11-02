@@ -19,10 +19,22 @@
 		<link rel="icon" href="./images/pavi.png" />
 	</head>
 	<body id="top">
+		
+			<div id="top_btn" class="hovered-link" style="z-index: 10000;">
+				<a href="#top"  class="smooth-scroll grow_btn">Top</a>
+			</div><!--탑버튼-->
+			
+			<div id="intro" class="hovered-link" >
+				<h1 class="grow_btn">KMJ</h1>
+			</div><!--로고-->
 
-		<nav><!--고정 GNB영역-->
+			<nav style="z-index: 99;"><!--고정 GNB영역-->
 			<ul id="gnb">
-				<li id="web_menu"><a href="#web01"  class="smooth-scroll-middle blue_dot">Web pages</a>
+				<li>
+					<a href="#about"  class="smooth-scroll blue_dot">About me</a>
+				</li>
+
+				<li id="web_menu"><a href="#webpages"  class="smooth-scroll blue_dot">Web pages</a>
 					<ul class="sub">
 						<li><a href="#web01"  class="smooth-scroll-middle">1</a>
 						</li>
@@ -66,50 +78,97 @@
 				<li>
 					<a href="#design"  class="smooth-scroll blue_dot">Design</a>
 				</li>
-				<li>
-					<a href="#about"  class="smooth-scroll blue_dot">About me</a>
-				</li>
-				
-				<li id="top_btn">
-					<a href="#top"  class="smooth-scroll blue_dot">Top</a>
-				</li>
 			</ul>
 		</nav>
 		<div class="cursor"></div><!--커서-->
 		<div>
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
+				
+			<!-- 소개 -->
+			<section class="wrapper style1 align-center" id="about">
+				<div class="inner">
+					<h2>About me</h2>
+					<p>These are the programs I can use</p>
+					<div class="items style1 medium onscroll-fade-in">
+						<section>
+								<img src="./images/logo/html.png" alt="html" />
+							<h3>HTML</h3>
+							<p>비주얼 스튜디오나 노트패드를 사용하여 마크업과 수정을 할 수 있습니다.</p>
 
-				<!-- intro -->
-					<section id="first_wrap" class="banner style5 orient-center content-align-center image-position-right fullscreen onload-image-fade-in onload-content-fade-up">
-						<div  id="first_page" class="content">
+							<div class="zt-skill-bar"><div data-width="85">HTML<span>85%</span></div></div>
+
+						</section>
+						<section>
+							<img src="./images/logo/css.png" alt="css" />
+							<h3>CSS</h3>
+							<p>비주얼 스튜디오나 노트패드를 사용하여 스타일을 적용할 수 있습니다.</p>
+
+							<div class="zt-skill-bar"><div data-width="85">CSS<span>85%</span></div></div>
+
+						</section>
+						<section>
+							<img src="./images/logo/photoshop.png" alt="photoshop" />
+							<h3>Photoshop</h3>
+							<p>디자인과 이미지 보정, 제품 상세페이지 등을 만들 수 있습니다.</p>
+
+							<div class="zt-skill-bar"><div data-width="75">Photoshop<span>75%</span></div></div>
+
+						</section>
+						<section>
+							<img src="./images/logo/illustrator.png" alt="illustrator" />
+							<h3>Illustrator</h3>
+							<p>로고 베리에이션 제작과 포스터 디자인 등을 만들 수 있습니다.</p>
+
+							<div class="zt-skill-bar"><div data-width="50">Illustrator<span>50%</span></div></div>
+
+						</section>
+						<section>
+							<img src="./images/logo/js.png" alt="js" />
+							<h3>Javascript </h3>
+							<p>간단한 코딩과 코드를 수정, 적용하여 활용할 수 있습니다.</p>
+
+							<div class="zt-skill-bar"><div data-width="30">Javascript<span>30%</span></div></div>
+
+						</section>
+						<section>
+							<img src="./images/logo/figma.png" alt="figma" />
+							<h3>Figma</h3>
+							<p>프레임워크와 디자인을 제작할 수 있습니다.</p>
 							
-							<div class="hovered-link"><h1 class="grow_btn">Hi there !</h1></div>
-							<div class="bubble">
-								<div>&nbsp;</div>
-								<div>&nbsp;</div>
-								<div>&nbsp;</div>
-							</div>
+							<div class="zt-skill-bar"><div data-width="50">Figma<span>50%</span></div></div>
 
-							<div class="typing-txt major"><!--타이핑효과-->
-								<ul>
-								  <li>김민정</li>
-								  <li>Minjeong Kim</li>
-								  <li>キム・ミンジョン</li>
-								  <li>金 珉 廷</li>
-							   </ul>
-							</div> 
-							<p class="typing"></p>
+						</section>
+						<section>
+							<img src="./images/logo/maya.png" alt="maya" />
+							<h3>Maya</h3>
+							<p>로우폴리 모델링과 v-ray 렌더링을 사용할 수 있습니다.</p>
+							
+							<div class="zt-skill-bar"><div data-width="50">Maya<span>50%</span></div></div>
 
-							<ul class="actions vertical">
-								<li><a href="#web01"  class="button big wide smooth-scroll-middle">Start</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/banner.jpg" alt="" />
-						</div>
-					</section>
+						</section>
+						<section>
+							<img src="./images/logo/blender.png" alt="blender" />
+							<h3>Blender</h3>
+							<p>간단하게 생긴 캐릭터 모델링과 텍스처링을 할 수 있습니다.</p>
+							
+							<div class="zt-skill-bar"><div data-width="30">Blender<span>30%</span></div></div>
+
+						</section>
+						<section>
+							<img src="./images/logo/substance.png" alt="substance" />
+							<h3>Substance painter</h3>
+							<p>하드 서페이스 재질 표현을 할 수 있습니다.</p>
+
+							<div class="zt-skill-bar"><div data-width="40">Substance<span>40%</span></div></div>
+
+						</section>
+					</div>
+				</div>
+			</section>
+
 			<div id="webpages">
+				<h2>Web pages</h2>
 				<!-- 까스활명수 -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="web01">
 						<div class="content">
@@ -560,88 +619,7 @@
 							</div>
 						</section>
 						
-				<!-- 소개 -->
-					<section class="wrapper style1 align-center" id="about">
-						<div class="inner">
-							<h2>About me</h2>
-							<p>These are the programs I can use</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-										<img src="./images/logo/html.png" alt="html" />
-									<h3>HTML</h3>
-									<p>비주얼 스튜디오나 노트패드를 사용하여 마크업과 수정을 할 수 있습니다.</p>
-
-									<div class="zt-skill-bar"><div data-width="85">HTML<span>85%</span></div></div>
-
-								</section>
-								<section>
-									<img src="./images/logo/css.png" alt="css" />
-									<h3>CSS</h3>
-									<p>비주얼 스튜디오나 노트패드를 사용하여 스타일을 적용할 수 있습니다.</p>
-
-									<div class="zt-skill-bar"><div data-width="85">CSS<span>85%</span></div></div>
-
-								</section>
-								<section>
-									<img src="./images/logo/photoshop.png" alt="photoshop" />
-									<h3>Photoshop</h3>
-									<p>디자인과 이미지 보정, 제품 상세페이지 등을 만들 수 있습니다.</p>
-
-									<div class="zt-skill-bar"><div data-width="75">Photoshop<span>75%</span></div></div>
-
-								</section>
-								<section>
-									<img src="./images/logo/illustrator.png" alt="illustrator" />
-									<h3>Illustrator</h3>
-									<p>로고 베리에이션 제작과 포스터 디자인 등을 만들 수 있습니다.</p>
-
-									<div class="zt-skill-bar"><div data-width="50">Illustrator<span>50%</span></div></div>
-
-								</section>
-								<section>
-									<img src="./images/logo/js.png" alt="js" />
-									<h3>Javascript </h3>
-									<p>간단한 코딩과 코드를 수정, 적용하여 활용할 수 있습니다.</p>
-
-									<div class="zt-skill-bar"><div data-width="30">Javascript<span>30%</span></div></div>
-
-								</section>
-								<section>
-									<img src="./images/logo/figma.png" alt="figma" />
-									<h3>Figma</h3>
-									<p>프레임워크와 디자인을 제작할 수 있습니다.</p>
-									
-									<div class="zt-skill-bar"><div data-width="50">Figma<span>50%</span></div></div>
-
-								</section>
-								<section>
-									<img src="./images/logo/maya.png" alt="maya" />
-									<h3>Maya</h3>
-									<p>로우폴리 모델링과 v-ray 렌더링을 사용할 수 있습니다.</p>
-									
-									<div class="zt-skill-bar"><div data-width="50">Maya<span>50%</span></div></div>
-
-								</section>
-								<section>
-									<img src="./images/logo/blender.png" alt="blender" />
-									<h3>Blender</h3>
-									<p>간단하게 생긴 캐릭터 모델링과 텍스처링을 할 수 있습니다.</p>
-									
-									<div class="zt-skill-bar"><div data-width="30">Blender<span>30%</span></div></div>
-
-								</section>
-								<section>
-									<img src="./images/logo/substance.png" alt="substance" />
-									<h3>Substance painter</h3>
-									<p>하드 서페이스 재질 표현을 할 수 있습니다.</p>
-
-									<div class="zt-skill-bar"><div data-width="40">Substance<span>40%</span></div></div>
-
-								</section>
-							</div>
-						</div>
-					</section>
-
+				
 				<!-- thankyou -->
 					<section id="thankyou" class="wrapper style1 align-center">
 							<h2>Thankyou!</h2>
@@ -668,46 +646,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/script.js"></script>
-			<script>//글자 타이핑효과
-				var typingBool = false; 
-				var typingIdx=0; 
-				var liIndex = 0;
-				var liLength = $(".typing-txt>ul>li").length;
-
-				// 타이핑될 텍스트를 가져온다 
-				var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
-				typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
-				if(typingBool==false){ // 타이핑이 진행되지 않았다면 
-					typingBool=true; 
-					var tyInt = setInterval(typing,100); // 반복동작 
-				} 
-					
-				function typing(){ 
-				if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
-					$(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
-					typingIdx++; 
-				} else{ //한문장이끝나면
-					//다음문장으로.. 마지막문장이면 다시 첫번째 문장으로 
-					if(liIndex>=liLength-1){
-					liIndex=0;
-					}else{
-					liIndex++; 
-					}
-					
-					//다음문장을 타이핑하기위한 셋팅
-						typingIdx=0;
-						typingBool = false; 
-						typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
-					
-					//다음문장 타이핑전 1초 쉰다
-						clearInterval(tyInt);
-						setTimeout(function(){
-							$(".typing").html('');
-						tyInt = setInterval(typing,100);
-						},1000);
-					} 
-				}
-			</script>
 			<script>//마우스호버 효과
 				let mouseCursor = document.querySelector(".cursor");
 				let navLinks = document.querySelectorAll(".grow_btn"); //메뉴 링크
@@ -723,12 +661,12 @@
 			    navLinks.forEach((link) => {
    			    link.addEventListener("mouseover", () => {
 				mouseCursor.classList.add("link-grow");
-				mouseCursor.style.zIndex = "-1";
+				mouseCursor.style.zIndex = "999";
 				link.classList.add("hovered-link");
 				});
 				link.addEventListener("mouseleave", () => {
 				mouseCursor.classList.remove("link-grow");
-				mouseCursor.style.zIndex = "1000";
+				mouseCursor.style.zIndex = "999";
 				link.classList.remove("hovered-link");
 				});
 			});
