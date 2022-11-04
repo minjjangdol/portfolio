@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
 	<title>카카오벤처스 메인</title>
 	<link href="./css/main.css" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="header_bg">
@@ -19,7 +20,7 @@
 		<h2><a href="#">SEARCH</a></h2>
 	</div>
 </header>
-	<h3>우리에게 필요한 미래를 앞당기는 혁신에 함께합니다.</h3>
+	<h3 class="fadein">우리에게 필요한 미래를 앞당기는 혁신에 함께합니다.</h3>
 </div>
 <section id="investment">
 	<hgroup class="tgroup">
@@ -254,4 +255,20 @@
 	</div>
 </footer>
 </body>
+<script>
+	//배너영역 텍스트효과//
+$(document).ready(function() {
+  $(window).scroll( function(){
+      $('.fadein').each( function(i){
+          
+          var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          if( bottom_of_window > bottom_of_element ){
+              $(this).animate({'opacity':'1','margin-bottom':'0px'},1300);
+          }
+         }); 
+     });
+ });
+</script>
 </html>
