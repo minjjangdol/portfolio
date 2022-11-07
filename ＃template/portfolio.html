@@ -431,13 +431,13 @@
 			</div>
 				<!-- 디자인영역 -->
 					<section class="wrapper style1 align-center" id="design">
-						<div class="inner">
+						<div class="inner" >
 							<h2>Design</h2>
 						</div>
 
-						<!-- 이미지들 -->
-							<div class="gallery style1 medium lightbox onscroll-fade-in">
-								<article>
+						<!-- 이미지들  class='zoom' -->
+							<div class="gallery style1 medium lightbox onscroll-fade-in " >
+								<article  class='zoom' >
 									<a href="./images/gallery/fulls/full01.png" class="image">
 										<img src="images/gallery/thumbs/01.png" alt="thumb01"/>
 									</a>
@@ -696,5 +696,14 @@
 			});
 		}(jQuery));
 			</script>
+
+			<script src='./assets/js/zoom/jquery.zoom.js'></script>
+			<script src='./assets/js/zoom/jquery.Wheelzoom.js'></script>
+			<script>
+			$(document).ready(function(){
+				$('.zoom').zoom();
+			});
+			</script>
+
 	</body>
 </html>

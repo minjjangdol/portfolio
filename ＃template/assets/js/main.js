@@ -332,7 +332,7 @@
 								$modal.trigger('click');
 
 					})
-					.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')
+					.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src=""/></div></div>')
 						.find('img')
 							.on('load', function(event) {
 

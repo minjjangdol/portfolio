@@ -141,7 +141,7 @@ h2{font-family: 'LeferiPoint-SpecialItalicA';}
     transition-property: background, transform;
     transform-origin: 100% 100%;
     background-size: cover;
-    z-index: 1000;
+    z-index: 100000000;
     -webkit-backdrop-filter: invert(100%);
     backdrop-filter: invert(100%);
 }

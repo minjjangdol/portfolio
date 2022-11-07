@@ -8,6 +8,22 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+/* magnifying glass icon */
+.zoom:after {
+	content:'';
+	display:block;
+	width:33px;
+	height:33px;
+	position:absolute;
+	top:0;
+	right:0;
+	background:url(icon.png);}
+	.zoom img {
+		display: block;
+	}
+	.zoom img::selection { background-color: transparent; }
+
 /* Reset */
 
 
@@ -6143,7 +6159,7 @@
 
 			.gallery.lightbox .modal .inner img {
 				display: block;
-				max-width: 90vw;
+				max-width: 50vw;
 				max-height: 85vh;
 				box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
 			}
@@ -6155,7 +6171,7 @@
 			pointer-events: auto;
 			visibility: visible;
 			opacity: 1;
-			z-index: 10001;
+			z-index: 1000;
 		}
 
 			.gallery.lightbox .modal.visible:before {
