@@ -17,6 +17,7 @@
 
 		<link rel="stylesheet" href="assets/css/portfolio_design.css" />
 		<link rel="icon" href="./images/pavi.png" />
+		<link rel="stylesheet" href="https://unpkg.com/photoswipe@beta/dist/photoswipe.css">
 	</head>
 	<body id="top">
 		
@@ -437,7 +438,7 @@
 
 						<!-- 이미지들  class='zoom' -->
 							<div class="gallery style1 medium lightbox onscroll-fade-in " >
-								<article  class='zoom' >
+								<article>
 									<a href="./images/gallery/fulls/full01.png" class="image">
 										<img src="images/gallery/thumbs/01.png" alt="thumb01"/>
 									</a>
@@ -625,6 +626,18 @@
 					<section id="thankyou" class="wrapper style1 align-center">
 							<h2>Thankyou!</h2>
 					</section>
+					
+				<div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">	
+				<!-- cropped thumbnail: -->
+					<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" 
+					data-pswp-width="1875" 
+					data-pswp-height="2500" 
+					data-cropped="true" 
+					target="_blank">
+					<img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
+					Cropped
+					</a>
+				</div>
 
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
@@ -640,6 +653,12 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/photoswipe_zoom/photoswipe-lightbox.esm.js"></script>
+			<script src="assets/js/photoswipe_zoom/photoswipe.esm.js"></script>
+			<script src="assets/js/photoswipe_zoom/photoswipe-deep-zoom-plugin.esm.js"></script>
+
+
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
