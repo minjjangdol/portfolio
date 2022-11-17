@@ -1,0 +1,168 @@
+@charset "utf-8";
+@import url("common.css");
+
+.request{
+    margin:0 auto 100px;
+    width:700px;
+    height:auto;
+    background:#fff;
+    box-shadow:1px 6px 19px 0px rgb(0 0 0 / 10%);
+}
+.request-item-wrapper{
+    padding:80px;
+}
+.progress-bar-wrap{
+    background:#eee;
+    width:90%;
+    height:5px;
+    transition: 0.9s;
+}
+
+
+.progress .val{
+    float:right;
+    line-height: 5px;
+    font-size:0.9rem;
+
+}
+
+.request-text{
+    text-align:center;
+    font-size:1.5rem;
+    font-weight:600;
+    margin:60px 0;
+}
+
+.request_box img{
+    width:100%;
+    margin:10px 0 30px;
+}
+
+.request_box .flex span{
+    letter-spacing: 4px;
+    font-size:1.125rem;
+    justify-content: space-between;
+    width:100%;
+    line-height:4;
+}
+
+.request_box .flex span:nth-of-type(1){
+    font-weight:600;
+}
+.request_box .flex span:nth-of-type(2){
+    text-align: center;
+}
+.request_box .flex span:nth-of-type(3){
+    text-align: right;
+}
+
+.RequestForm--answer-area{
+    display:flex;
+    align-items: center;
+    padding:0 10px;
+    line-height:5;
+    height:105px;
+    font-size:1.125rem;
+    border-bottom:1px solid #ccc;
+}
+label{
+    cursor: pointer;
+    width:100%;
+}
+
+input[type=checkbox] {
+    accent-color:#4F1421;
+    margin-right:30px;
+}
+
+.step_wrapper{
+    text-align:center;
+    margin-top:60px;
+    display:block;
+}
+
+
+#textbar{
+    outline: none;
+    border:1px solid #4F1421;
+    width:70%;
+    height:20px;
+    margin-left:50px;
+}
+/*
+.error{
+    color:#fa5963;
+    margin-bottom:30px;
+    text-align:center;
+}
+*/
+
+
+.btn2:hover{
+    color:#333;
+    background:#EBD7B6;
+    border:1px solid #EBD7B6;
+    box-shadow: 140px 0 0 0 rgba(255, 255, 255, 1) inset, -140px 0 0 0 rgba(255, 255, 255, 1) inset;
+    box-sizing: border-box;
+}
+
+.btn3{
+    background:#EBD7B6;
+    border:#EBD7B6;
+    color:#333;
+    margin-right:20px;
+}
+/* test */
+
+.section {
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  .nav{display:none;}
+  ul li.active {
+    opacity: 1 !important;
+  }
+  
+  .next,
+  .previous {
+    padding: 15px 10px;
+    border-radius: 6px;
+    background: deepskyblue;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .next.disable,
+  .previous.disable {
+    cursor: none;
+    opacity: .5;
+  }
+
+
+
+@media all and (max-width:1024px){
+    
+    .request{
+        width:94%;
+    }
+    .request-text{
+        font-size:1.2rem;
+    }
+
+    .request-item-wrapper{
+        padding:35px;
+    }
+
+    .request_box .flex span{
+        font-size:0.97rem;
+        letter-spacing: 2px;
+    }
+}
+
