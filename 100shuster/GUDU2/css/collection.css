@@ -1,0 +1,180 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url("./common.css");
+
+img{vertical-align: top;}
+#container{
+    width:100%;
+    padding:100px 100px 100px 320px;
+    box-sizing: border-box;
+}
+.btn2:hover{
+    color:#4F1421;
+    border:1px solid #4F1421;
+    box-shadow: 140px 0 0 0 rgba(255, 255, 255, 1) inset, -140px 0 0 0 rgba(255, 255, 255, 1) inset;
+    box-sizing: border-box;
+
+    /*box-shadow:140px 0 0 0 rgb(235, 215, 182, 0.9) inset, -140px 0 0 0 rgb(235, 215, 182, 0.9) inset;*/
+}
+
+/*header*/
+#gnb>li:nth-of-type(2){
+    font-weight: bold;
+}
+
+/*contents*/
+#container>section>h3{
+    display: none;
+}
+#container>section{
+    margin-bottom: 20%;
+}
+#container>section:last-child{margin: 0;}
+#container>section img{width: 100%;}
+#container>section h4{
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin: 3% 0;
+}
+#container>section p{
+    line-height: 1.5;
+    margin: 10% 0 15% 0;
+    color: #666;
+}
+
+.s_s, .f_w{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.s_s img, .f_w img, .product{
+    cursor: pointer;
+}
+.s_s>div:first-child{width: 60%;}
+.s_s>div:last-child{
+    width: 40%;
+    padding: 2% 2% 0 6%;
+    box-sizing: border-box;
+    text-align: right;
+    /*background: #fff6ea;*/
+}
+
+.f_w>div:first-child{
+    width: 40%;
+    padding: 2% 6% 0 2%;
+    box-sizing: border-box;
+    /*background: #fff6ea;*/
+}
+.f_w>div:last-child{width: 60%;}
+
+.product{width: 100%;}
+.product>ul{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.product>ul>li{
+    width: 32.5%;
+}
+footer>ul{margin-top: 0;}
+
+@media all and (min-width:1025px){
+    #container>h2{padding-right: 220px;}
+}
+@media all and (max-width:1350px){
+    header,header>div,nav{z-index: 999;}
+    .s_s{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .s_s>div:first-child{width: 100%;}
+    .s_s>div:last-child{
+        width: 100%; height: 250px;
+        position: relative;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .s_s>div:last-child>div{
+        position: absolute;
+    }
+    .s_s>div:last-child>p{
+        margin: 0 !important;
+        position: absolute;
+        bottom: 10%;
+    }
+    .s_s>div:last-child>button{
+        position: absolute;
+        right: 2%; bottom: 10%;
+    }
+    .f_w{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+    .f_w>div:last-child{width: 100%;}
+    .f_w>div:first-child{
+        width: 100%; height: 250px;
+        position: relative;
+        padding: 10px 0;
+    }
+    .f_w>div:first-child>div{
+        position: absolute;
+    }
+    .f_w>div:first-child>p{
+        margin: 0 !important;
+        position: absolute;
+        bottom: 10%;
+    }
+    .f_w>div:first-child>button{
+        position: absolute;
+        right: 2%; bottom: 10%;
+    }
+    #container>section h4{
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    
+}
+
+@media all and (max-width:600px){/*모바일*/
+    
+    address>.flex{
+        flex-flow:row wrap;
+        width: 80%;
+        margin:0 auto;
+    }
+
+    .product>ul>li:nth-child(2){display: none;}
+    .product>ul>li{width: 49%;}
+    .btn2{
+        border:1px solid #4F1421;
+        background:#4F1421;
+        width: 120px;
+        height: 34px;
+        text-align: center;
+        border: 1px solid #4F1421;
+        cursor: pointer;
+        font-weight: 500;
+        letter-spacing: 2px;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        color:#fff;
+        font-size: 0.8rem;
+    }
+    .btn2:hover{
+        color:#4F1421;
+        border:1px solid #4F1421;
+        box-shadow: 120px 0 0 0 rgba(255, 255, 255, 1) inset, -120px 0 0 0 rgba(255, 255, 255, 1) inset;
+        box-sizing: border-box;
+    
+        /*box-shadow:140px 0 0 0 rgb(235, 215, 182, 0.9) inset, -140px 0 0 0 rgb(235, 215, 182, 0.9) inset;*/
+    }
+
+}

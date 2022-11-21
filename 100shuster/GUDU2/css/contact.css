@@ -1,0 +1,75 @@
+@import url('./common.css');
+
+
+
+#gnb>li:nth-child(5) a{font-weight: 600;}
+#container {
+    width: 100%;
+    padding: 100px 100px 100px 320px;
+    box-sizing: border-box;
+}
+
+#container .flex>div{
+    width: 48%;
+    margin: 0 2%;
+}
+.location_section>iframe{
+    width: 100%;
+}
+.form_wrap p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.form_wrap input, .text_wrap textarea{
+    width: 100%; height: 20px;
+    margin: 5px 0 20px;
+    padding: 5px 0;
+
+    box-sizing: border-box;
+}
+.form_wrap input{
+    border: 0;
+    border-bottom: 1px solid #4f1421;
+    outline: transparent;
+}
+.form_wrap input::placeholder{
+    color: #aaa;
+}
+.text_wrap textarea{
+    height: 120px;
+    border: 1px solid #4f1421;
+    padding: 5px;
+    font-size: 0.85rem;
+    outline: transparent;
+}
+.btn2{
+    height: 35px; 
+}
+.btn2:hover {
+    color: #fff;
+    border: 1px solid #4f1421;
+    box-shadow: none;
+    /* box-shadow: 140px 0 0 0 rgb(235 215 182 / 90%) inset, -140px 0 0 0 rgb(235 215 182 / 90%) inset; */
+}
+.btn_wrap{
+    width: 100%;
+    text-align: right;
+}
+
+@media all and (max-width:1024px){/*타블렛*/
+    #container .flex{
+        flex-direction: column;
+    }
+    #container .flex>div{
+        width: 100%;
+
+    }
+    .location_section{padding-bottom: 50px;}
+    
+    .btn_wrap{
+        text-align: center;
+    }
+    .btn2{width: 100%; margin-top: 10px;}
+    
+}

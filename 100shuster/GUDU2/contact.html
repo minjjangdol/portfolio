@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/favicon2.png">
+    <title>SHUSTER</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./css/contact.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="./img/favicon2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <img src="./img/top_btn.png" alt="top_btn" class="top_btn"/>
+    <header class="wrap header">
+        <div class="flex">
+            <i id="hamberger" class="xi-bars xi-2x"></i>
+            <h1 class="logo mob"><a href="./index.html">LOGO</a></h1>
+            <div></div>
+        </div>
+        <nav>
+            <h2 class="logo pc"><a href="./index.html">LOGO</a></h2>
+            <ul id="gnb"><!--GNB-->
+                <li><a href="./gallery.html">NEW</a></li>
+                <li><a href="./collection.html">COLLECTION</a></li>
+                <li><a href="javascript:void(0);">SHOES</a>
+                    <ul class="sub">
+                        <li><a href="./gallery.html">Oxford</a></li>
+                        <li><a href="./gallery.html">Loafer</a></li>
+                        <li><a href="./gallery.html">Derby</a></li>
+                        <li><a href="./gallery.html">Walker</a></li>
+                        <li><a href="./gallery.html">Mule</a></li>
+                    </ul>
+                </li>
+                <li><a href="./custom.html">CUSTOM</a></li>
+                <li><a href="./contact.html">CONTACT </a></li>
+            </ul>
+            <ul id="util">
+                <li><a href="./index.html">LOGOUT</a></li>
+                <li><a href="./myorder.html">MY ORDER</a></li>
+                <li><a href="./cart.html">CART</a></li>
+            </ul>
+            <div class="search kr">
+                <input type="text" placeholder="내용을 입력하세요."/>
+                <i class="xi-search xi-x"></i>
+            </div>
+            <div id="icons">
+                <a href="#"><i class="xi-kakaotalk xi-2x"></i></a>
+                <a href="#"><i class="xi-instagram xi-2x"></i></a>
+                <a href="#"><i class="xi-youtube-play xi-2x"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container">
+        <section class="contact_section">
+            <h3 class="title">CONTACT</h3>
+
+            <div class="flex">
+                <div class="location_section">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93174.75562920728!2d126.5736800860806!3d33.37569383116253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350cffa93f198045%3A0x7f671c8c953d771a!2z7IKs65287Jik66aE!5e0!3m2!1sko!2skr!4v1668749666911!5m2!1sko!2skr" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <div class="form_box">
+                        <form method="post">
+                            <div class="form_wrap">
+                                <p>NAME</p>
+                                <input type="text" placeholder=" 이름을 입력하세요." >
+                                <p>PHONE NUMBER</p>
+                                <input type="text" placeholder=" ex) 010-0000-0000" />
+                                <p>E-MAIL</p>
+                                <input type="text" placeholder=" ex) ****@gmail.com" />
+                            </div>
+                            <div class="text_wrap clear">
+                                <textarea placeholder="내용을 입력하세요."></textarea>
+                            </div>
+                            <div class="btn_wrap">
+                                <button type="button" class="btn2">S E N D</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+
+    <footer>
+        <ul class="flex kr">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">쇼핑가이드</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+        </ul>
+        <address>
+            <ul class="flex kr" >
+                <li>상호 : 슈스터</li>
+                <li>대표 : 박대성</li>
+                <li>주소 : 서울 인천구 부산로 1길 1층</li>
+                <li>사업자 등록번호 : 111-11-111111</li>
+                <li>통신판매업 신고 : 신발 - 1111호</li>
+            </ul>
+            <div class="logo_w">LOGO</div>
+            <p>&copy; COPYRIGHTS RESERVED 2022 SHUSTER.</p>
+        </address>
+    </footer>
+<script src="./js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@import url('./common.css');
+
+.sub{display: block;}
+.sub>li:nth-child(2)>a{font-weight: bold;}
+#g_container{
+    width:100%;
+    padding:100px 80px 0 320px;
+    box-sizing: border-box;
+}
+.type{
+    text-align:right;
+    margin-bottom:20px;
+    font-size: 1.2rem;
+}
+.type>span{
+    font-weight:bold ;
+}
+section.flex{
+    width: 100%;
+    justify-content: left;
+    flex-flow:row wrap;
+}
+section>figure{
+    width:22%;
+    margin-right:4%;
+    margin-bottom:80px;
+}
+section>figure:nth-of-type(4n){
+    margin-right:0;
+}
+section>figure a{
+    display:block;
+    width:100%;
+}
+section>figure::after{
+    content:'';
+    display:block;
+    width:0; height:0;
+    visibility:hidden;
+    overflow:hidden;
+    clear:both;
+}
+section img{
+    width:100%;
+    vertical-align: top;
+}
+figcaption>p{
+    line-height:2;
+}
+figcaption>p:first-child{
+    font-size:1.2rem;
+    padding-top:20px;
+}
+
+.page{margin: 50px 0 150px;}
+.page>.flex>li{
+    width:40px !important;
+    margin:0 20px !important;
+    text-align:center !important;
+}
+
+.page>ul>li>a:hover{
+    font-weight:bold;
+}
+.page>ul>li:nth-of-type(2)>a{cursor:text; font-weight:bold;}
+
+@media all and (max-width:1024px){/*타블렛*/
+    #g_container{
+        width:100%;
+        padding:70px 2% 50px;
+        box-sizing: border-box;
+    }
+    section>figure{
+        width:49%;
+        margin-right:2%;
+        margin-bottom:80px;
+    }
+    section>figure:nth-of-type(2n){
+        margin-right:0;
+    }
+
+
+}
+@media all and (max-width:600px){/*모바일*/
+    section>figure{
+        width:100%;
+        margin-right:0;
+    }
+
+    
+}
