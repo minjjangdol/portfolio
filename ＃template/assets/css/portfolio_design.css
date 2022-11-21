@@ -108,7 +108,23 @@ nav{position: sticky; top: 10px;}
     background: #000;
 }
 
+
 /*제목*/
+h1{
+    
+font-family: 'LeferiPoint-SpecialItalicA';
+    font-size: 2rem;
+    color: #000;
+    border: 7px solid #000;
+    border-top: 0;
+    border-radius: 50%;
+    background: transparent;
+    width: 100%; height: 150px;
+    margin: 40px auto -12px;
+    line-height: 150px;
+}
+
+
 #intro{
     position: absolute;
     left: 2%; top: 25px;
@@ -248,10 +264,7 @@ h2{font-family: 'LeferiPoint-SpecialItalicA';}
 
 
 
-
-
 @media screen and (max-width: 1680px) {
-
 
 }
 
@@ -281,7 +294,6 @@ h2{font-family: 'LeferiPoint-SpecialItalicA';}
         top: 80px;
         line-height: 2;
     }
-
 
     .blue_dot:hover::after{
         width:20px; height:20px;
